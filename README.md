@@ -97,7 +97,7 @@ Kasus 2 (tidak menghasilkan kesimpulan):
 
 Kasus 3 (menghasilkan kesimpulan):
 
-![Kasus 3](screenshot/kasus3.png)
+![Kasus 3](https://github.com/rasyadalkautsar22-pixel/KESIAPSIAGAAN-BANJIR-DAN-LONGSOR/blob/8af35d0d6e3a08572b97a46d491c7c91bb5c80f4/Screenshot%202026-11-13%20203958.png)
 
 ## 6. Batas keberlakuan
 
