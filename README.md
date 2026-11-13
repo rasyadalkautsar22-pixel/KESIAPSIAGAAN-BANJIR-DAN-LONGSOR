@@ -93,7 +93,7 @@ Kasus 1 (menghasilkan kesimpulan):
 
 Kasus 2 (tidak menghasilkan kesimpulan):
 
-![Kasus 2](screenshot/kasus2.png)
+![Kasus 2]([screenshot/kasus2.png](https://github.com/rasyadalkautsar22-pixel/KESIAPSIAGAAN-BANJIR-DAN-LONGSOR/blob/0cd3b55270d8a94f3c9570bf9e509eaff1841063/Screenshot%202026-11-13%20203914.png))
 
 Kasus 3 (menghasilkan kesimpulan):
 
