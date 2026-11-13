@@ -89,7 +89,7 @@ Urutan jawaban untuk 12 pertanyaan ada di `kasus1.txt`, `kasus2.txt`, dan `kasus
 
 Kasus 1 (menghasilkan kesimpulan):
 
-![Kasus 1](![alt text](c:\Users\Pongo\Pictures\Screenshots\Screenshot 2026-11-13 203839.png?raw=true))
+![Kasus 1](https://github.com/rasyadalkautsar22-pixel/KESIAPSIAGAAN-BANJIR-DAN-LONGSOR/blob/1108debcad07db9ab12560132a5b76cf7e71b4ea/Screenshot%202026-11-13%20203839.png))
 
 Kasus 2 (tidak menghasilkan kesimpulan):
 
