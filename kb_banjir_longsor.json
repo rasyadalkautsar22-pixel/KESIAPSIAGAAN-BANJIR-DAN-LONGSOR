@@ -1,0 +1,28 @@
+{
+  "judul": "Kesiapsiagaan banjir dan longsor: tindakan yang perlu diambil warga",
+  "batas": "Aturan berasal dari 3 dokumen resmi (BNPB, PVMBG/Kementerian ESDM, Pemprov DI Yogyakarta). Aturan bersifat panduan umum, tanpa ambang angka (curah hujan, tinggi muka air). Selalu utamakan peringatan resmi BMKG dan arahan BPBD setempat.",
+  "sumber": {
+    "S1": "Tanggap, Tangkas, Tangguh Menghadapi Bencana (bagian Banjir dan Tanah Longsor), BNPB, https://www.bnpb.go.id/storage/app/media/uploads/migration/pubs/478.pdf",
+    "S2": "PVMBG: Longsor di Solok Akibat Penggalian Lereng dan Curah Hujan Tinggi, Kementerian ESDM, 28 September 2024, https://www.esdm.go.id/en/media-center/news-archives/pvmbg-longsor-di-solok-akibat-penggalian-lereng-dan-curah-hujan-tinggi",
+    "S3": "Prosedur Peringatan Dini dan Evakuasi Darurat Banjir, PPID Pemerintah Provinsi DI Yogyakarta, https://ppid.jogjaprov.go.id/informasi/unduh/f61a0df4-e67b-4bc1-a441-c2d98246c3fc"
+  },
+  "kesimpulan_akhir": [
+    "segera mengungsi ke tempat yang lebih tinggi atau posko banjir",
+    "segera menjauh dari lereng dan mengungsi ke tempat aman",
+    "matikan listrik rumah dan jangan menyentuh alat listrik saat berdiri di air",
+    "siapkan tas siaga bencana dan pantau informasi dari sumber resmi",
+    "ikuti arahan BPBD dan mengungsi ke tempat aman"
+  ],
+  "aturan": [
+    {"id": "R1", "jika": ["hujan deras berlangsung lama", "air laut pasang"], "mode": "atau", "maka": "curah air tinggi", "sumber": ["S1", "S2"]},
+    {"id": "R2", "jika": ["curah air tinggi", "tinggal di bantaran sungai atau dataran banjir"], "mode": "dan", "maka": "risiko banjir tinggi", "sumber": ["S1", "S3"]},
+    {"id": "R3", "jika": ["risiko banjir tinggi", "air menggenang di sekitar rumah"], "mode": "dan", "maka": "segera mengungsi ke tempat yang lebih tinggi atau posko banjir", "sumber": ["S1", "S3"]},
+    {"id": "R4", "jika": ["ada retakan pada tanah atau tebing", "air sumur di sekitar tebing keruh", "air tanah muncul tiba-tiba", "ada longsoran batu kecil"], "mode": "atau", "maka": "tanda longsor muncul", "sumber": ["S1"]},
+    {"id": "R5", "jika": ["curah air tinggi", "tinggal di dekat lereng atau tebing"], "mode": "dan", "maka": "lereng berisiko jenuh air", "sumber": ["S1", "S2"]},
+    {"id": "R6", "jika": ["tanda longsor muncul", "lereng berisiko jenuh air"], "mode": "dan", "maka": "bahaya longsor tinggi", "sumber": ["S1", "S2"]},
+    {"id": "R7", "jika": ["bahaya longsor tinggi"], "mode": "dan", "maka": "segera menjauh dari lereng dan mengungsi ke tempat aman", "sumber": ["S1", "S2"]},
+    {"id": "R8", "jika": ["air sudah masuk ke rumah", "listrik rumah masih menyala"], "mode": "dan", "maka": "matikan listrik rumah dan jangan menyentuh alat listrik saat berdiri di air", "sumber": ["S1", "S3"]},
+    {"id": "R9", "jika": ["risiko banjir tinggi", "bahaya longsor tinggi"], "mode": "atau", "maka": "siapkan tas siaga bencana dan pantau informasi dari sumber resmi", "sumber": ["S3"]},
+    {"id": "R10", "jika": ["ada perintah mengungsi dari BPBD atau aparat desa"], "mode": "dan", "maka": "ikuti arahan BPBD dan mengungsi ke tempat aman", "sumber": ["S2", "S3"]}
+  ]
+}
